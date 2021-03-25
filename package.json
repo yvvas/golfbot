@@ -1,0 +1,50 @@
+{
+  "name": "golfbot",
+  "version": "0.0.1",
+  "description": "golfbot CLI",
+  "private": true,
+  "bin": {
+    "golfbot": "bin/golfbot"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "test": "jest",
+    "watch": "jest --watch",
+    "snapupdate": "jest --updateSnapshot",
+    "coverage": "jest --coverage"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios-cookiejar-support": "^1.0.1",
+    "date-fns": "^2.19.0",
+    "date-fns-tz": "^1.1.3",
+    "dotenv": "^8.2.0",
+    "gluegun": "latest",
+    "tough-cookie": "^4.0.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "prettier": "^1.12.1",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
